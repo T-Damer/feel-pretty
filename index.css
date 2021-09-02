@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;900&display=swap');
+
+:root{
+    --main-gradient: linear-gradient(45deg, #87adfe, #ff77cd);
+    --box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    height: auto;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/background.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
+}
+
+.navbar {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.logo {
+    width: 10rem;
+    cursor: pointer;
+}
+
+nav {
+    flex: 1;
+    padding-left: 60px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #333;
+    font-size: 2rem;
+}
+
+.cart {
+    width: 4rem;
+}
+
+.content {
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.content h1 {
+    font-size: 4.3rem;
+    font-weight: 400;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #232d60;
+}
+
+.content .button {
+    display: inline-block;
+    background: var(--main-gradient);
+    border-radius: 1rem;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    color: #fff;
+    box-shadow: var(--box-shadow);
+}
+
+.content p {
+    font-size: 1.5rem;
+    color: #6a7199;
+}
+
+.arrow-icons {
+    margin-top: 40px;
+    margin-left: 12rem;
+    display: flex;
+}
+
+.arrow-icons img {
+    width: 40px;
+    margin-right: 25px;
+}
+
+.feature-image {
+    height: 90%;
+    position: absolute;
+    bottom: 0;
+    right: 160px;
+}
+
+.social-links {
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -80px;
+    bottom: 180px;
+}
+
+.social-links a {
+    padding-right: 20px;
+    color: #6a7199;
+}
+
+@media screen and (max-width: 1024px) {
+    .feature-image {
+        display: none;
+    }
+
+    .logo {
+        width: 7rem;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+}
